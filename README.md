@@ -264,18 +264,7 @@ Manufacturing files generated for PCB fabrication.
 
 EasyEDA project file containing the PCB design project.
 
-## Design Version
-
-**PCB Version:** V2
-**Schematic Version:** V1.0
-**Schematic Date:** July–August 2026
-
-The schematic identifies the design as **“Board Version 2”** and documents the four-page hardware architecture.
 
 ## Notes
 
 This repository documents the **hardware design** of the automatic card-dealing system. The schematic defines the available electrical interfaces and hardware functionality; the exact card-dealing sequence, motor-control algorithms, OLED interface behavior, and sensor-processing logic depend on the firmware and mechanical implementation.
-
-## License
-
-No license is currently specified for this project. Unless otherwise stated by the project author, the contents of this repository should be considered **all rights reserved**.
