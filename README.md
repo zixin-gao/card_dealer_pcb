@@ -1,6 +1,6 @@
 # Automatic Card Dealer PCB
 
-<img width="1080" height="1081" alt="PCB 3d" src="https://github.com/user-attachments/assets/7a94cc27-78b3-43ce-972a-9f2cd8988112" />
+<img width="1080" height="1081" alt="04c15ea1cc14ad1e33903ccc4fa5ff0a" src="https://github.com/user-attachments/assets/3cc5681c-dbcc-40f4-9250-92a4260bc8eb" />
 
 ## Overview
 
