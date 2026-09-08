@@ -244,14 +244,6 @@ The battery input is regulated through an onboard switching converter to provide
 
 The project repository contains the PCB design and manufacturing files, including:
 
-```text
-card_dealer_pcb/
-├── SCH_Schematic2.pdf
-├── Gerber_PCB2.zip
-├── poker.epro2
-└── README.md
-```
-
 ### `SCH_Schematic2.pdf`
 
 Complete electrical schematic for the PCB, including the power supply, ESP32-S3 controller, ULN2003 stepper driver, and DRV8833 motor driver.
@@ -260,7 +252,7 @@ Complete electrical schematic for the PCB, including the power supply, ESP32-S3 
 
 Manufacturing files generated for PCB fabrication.
 
-### `poker.epro2`
+### `pokerV2.epro2`
 
 EasyEDA project file containing the PCB design project.
 
