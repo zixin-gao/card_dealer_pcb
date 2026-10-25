@@ -36,37 +36,37 @@ The schematic is organized into four primary sections:
 The overall hardware architecture is:
 
 ```text
-                         Battery
-                            │
-                            ▼
-                   ┌────────────────┐
-                   │ Power Input &  │
-                   │   Filtering    │
-                   └───────┬────────┘
-                           │
-                       VDD_VIN
-                           │
-                           ▼
-                   ┌────────────────┐
-                   │   SY8120IABC   │
-                   │  Buck Regulator│
-                   └───────┬────────┘
-                           │
-                        VDD_5V
-                           │
-              ┌────────────┼─────────────┐
-              │            │             │
-              ▼            ▼             ▼
-          ESP32-S3      ULN2003       DRV8833
-              │            │             │
-              │            ▼             ▼
-              │         Stepper       DC Motor
-              │          Motor
-              │
-      ┌───────┼───────────┬──────────────┐
-      │       │           │              │
-      ▼       ▼           ▼              ▼
-    OLED   Encoder    Card Counter   Empty Sensor
+                                       Power Supply (~7V)
+                         │
+                         ▼
+                ┌────────────────┐
+                │ Power Input &  │
+                │   Filtering    │
+                └───────┬────────┘
+                        │
+                     VDD_VIN
+                        │
+              ┌─────────┴─────────┐
+              │                   │
+              ▼                   ▼
+        ┌───────────┐     ┌────────────────┐
+        │  DRV8833  │     │   SY8120IABC   │
+        │ DC Driver │     │ Buck Regulator │
+        └─────┬─────┘     └───────┬────────┘
+              │                   │
+              ▼                VDD_5V
+          DC Motor                │
+                         ┌───────┴────────┐
+                         │                │
+                         ▼                ▼
+                     ULN2003          ESP32-S3
+                         │                │
+                         ▼             VDD_3V3
+                    Stepper Motor         │
+                              ┌───────────┼───────────┬─────────────┐
+                              │           │           │             │
+                              ▼           ▼           ▼             ▼
+                            OLED       Encoder    Card Counter   Empty Sensor
 ```
 
 The ESP32-S3 acts as the central controller and interfaces with the motor drivers, display, encoder, and card-detection circuitry.
