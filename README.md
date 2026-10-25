@@ -36,7 +36,7 @@ The schematic is organized into four primary sections:
 The overall hardware architecture is:
 
 ```text
-                                       Power Supply (~7V)
+                Power Supply (~7V)
                          │
                          ▼
                 ┌────────────────┐
