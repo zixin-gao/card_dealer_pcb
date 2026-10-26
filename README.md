@@ -56,17 +56,17 @@ The overall hardware architecture is:
               │                   │
               ▼                VDD_5V
           DC Motor                │
-                         ┌───────┴────────┐
-                         │                │
-                         ▼                ▼
-                     ULN2003          ESP32-S3
-                         │                │
-                         ▼             VDD_3V3
-                    Stepper Motor         │
-                              ┌───────────┼───────────┬─────────────┐
-                              │           │           │             │
-                              ▼           ▼           ▼             ▼
-                            OLED       Encoder    Card Counter   Empty Sensor
+                          ┌───────┴────────┐
+                          │                │
+                          ▼                ▼
+                      ULN2003          ESP32-S3
+                          │                │
+                          ▼             VDD_3V3
+                     Stepper Motor         │
+                               ┌───────────┼───────────┬─────────────┐
+                               │           │           │             │
+                               ▼           ▼           ▼             ▼
+                             OLED       Encoder    Card Counter   Empty Sensor
 ```
 
 The ESP32-S3 acts as the central controller and interfaces with the motor drivers, display, encoder, and card-detection circuitry.
